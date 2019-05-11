@@ -16,7 +16,20 @@
 		E3E882C822873F1E00AD3DC2 /* SoccerVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */; };
 		E3E882CA228740F000AD3DC2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C9228740F000AD3DC2 /* VideoViewController.swift */; };
 		E3E882CD2287429900AD3DC2 /* FetchSoccerVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882CC2287429900AD3DC2 /* FetchSoccerVideos.swift */; };
+		E3E882E422874BD200AD3DC2 /* SoccerVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882CF22874A0200AD3DC2 /* SoccerVideoTests.swift */; };
+		E3E882E622874BF100AD3DC2 /* SoccerVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */; };
+		E3E882E722874C2300AD3DC2 /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = E3E882D322874A9D00AD3DC2 /* video.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3E882DF22874BBA00AD3DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E882A62287167D00AD3DC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3E882AD2287167D00AD3DC2;
+			remoteInfo = Score;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E3E882AE2287167D00AD3DC2 /* Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Score.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +43,21 @@
 		E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerVideoModel.swift; sourceTree = "<group>"; };
 		E3E882C9228740F000AD3DC2 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		E3E882CC2287429900AD3DC2 /* FetchSoccerVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSoccerVideos.swift; sourceTree = "<group>"; };
+		E3E882CF22874A0200AD3DC2 /* SoccerVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerVideoTests.swift; sourceTree = "<group>"; };
+		E3E882D322874A9D00AD3DC2 /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
+		E3E882DA22874BBA00AD3DC2 /* ScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E882DE22874BBA00AD3DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E3E882AB2287167D00AD3DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3E882D722874BBA00AD3DC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				E3E882B02287167D00AD3DC2 /* Score */,
+				E3E882DB22874BBA00AD3DC2 /* ScoreTests */,
 				E3E882AF2287167D00AD3DC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E3E882AE2287167D00AD3DC2 /* Score.app */,
+				E3E882DA22874BBA00AD3DC2 /* ScoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +88,7 @@
 		E3E882B02287167D00AD3DC2 /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				E3E882CE228749E800AD3DC2 /* Tests */,
 				E3E882CB2287428100AD3DC2 /* Services */,
 				E3E882C522873BF100AD3DC2 /* Models */,
 				E3E882B12287167D00AD3DC2 /* AppDelegate.swift */,
@@ -100,6 +127,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		E3E882CE228749E800AD3DC2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E3E882DB22874BBA00AD3DC2 /* ScoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3E882CF22874A0200AD3DC2 /* SoccerVideoTests.swift */,
+				E3E882D322874A9D00AD3DC2 /* video.json */,
+				E3E882DE22874BBA00AD3DC2 /* Info.plist */,
+			);
+			path = ScoreTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +164,24 @@
 			productReference = E3E882AE2287167D00AD3DC2 /* Score.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E3E882D922874BBA00AD3DC2 /* ScoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3E882E122874BBA00AD3DC2 /* Build configuration list for PBXNativeTarget "ScoreTests" */;
+			buildPhases = (
+				E3E882D622874BBA00AD3DC2 /* Sources */,
+				E3E882D722874BBA00AD3DC2 /* Frameworks */,
+				E3E882D822874BBA00AD3DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3E882E022874BBA00AD3DC2 /* PBXTargetDependency */,
+			);
+			name = ScoreTests;
+			productName = ScoreTests;
+			productReference = E3E882DA22874BBA00AD3DC2 /* ScoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -132,6 +194,10 @@
 				TargetAttributes = {
 					E3E882AD2287167D00AD3DC2 = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					E3E882D922874BBA00AD3DC2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E3E882AD2287167D00AD3DC2;
 					};
 				};
 			};
@@ -149,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				E3E882AD2287167D00AD3DC2 /* Score */,
+				E3E882D922874BBA00AD3DC2 /* ScoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +228,14 @@
 				E3E882BC2287167F00AD3DC2 /* LaunchScreen.storyboard in Resources */,
 				E3E882B92287167F00AD3DC2 /* Assets.xcassets in Resources */,
 				E3E882B72287167D00AD3DC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3E882D822874BBA00AD3DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E882E722874C2300AD3DC2 /* video.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +255,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3E882D622874BBA00AD3DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E882E622874BF100AD3DC2 /* SoccerVideoModel.swift in Sources */,
+				E3E882E422874BD200AD3DC2 /* SoccerVideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3E882E022874BBA00AD3DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3E882AD2287167D00AD3DC2 /* Score */;
+			targetProxy = E3E882DF22874BBA00AD3DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E3E882B52287167D00AD3DC2 /* Main.storyboard */ = {
@@ -354,6 +446,46 @@
 			};
 			name = Release;
 		};
+		E3E882E222874BBA00AD3DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XB6MQNSHTB;
+				INFOPLIST_FILE = ScoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = messer.ScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score.app/Score";
+			};
+			name = Debug;
+		};
+		E3E882E322874BBA00AD3DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XB6MQNSHTB;
+				INFOPLIST_FILE = ScoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = messer.ScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score.app/Score";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,6 +503,15 @@
 			buildConfigurations = (
 				E3E882C12287167F00AD3DC2 /* Debug */,
 				E3E882C22287167F00AD3DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3E882E122874BBA00AD3DC2 /* Build configuration list for PBXNativeTarget "ScoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E882E222874BBA00AD3DC2 /* Debug */,
+				E3E882E322874BBA00AD3DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

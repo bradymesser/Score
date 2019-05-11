@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SoccerVideoModel {
+struct SoccerVideoModel: Decodable {
     let title: String
     let embed: String
     let url: String
@@ -19,18 +19,18 @@ struct SoccerVideoModel {
     let videos: [Video]
 }
 
-struct Side {
+struct Side: Decodable {
     let name: String
     let url: String
 }
 
-struct Competition {
+struct Competition: Decodable {
     let name: String
     let id: Int
     let url: String
 }
 
-struct Video {
+struct Video: Decodable {
     let title: String
     let embed: String
 }
