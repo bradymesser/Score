@@ -26,9 +26,10 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: CustomCell
-        cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell") as! CustomCell
-        cell.textLabel?.text = videos[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        if let cell = cell as? CustomCell {
+            cell.label.text = videos[indexPath.row].title
+        }
         return cell
     }
 }

@@ -12,6 +12,6 @@ func getSoccerVideos() -> [SoccerVideoModel] {
         else {
             print("ERROR")
         }
-    }
+    }.resume()
     return videos
 }
