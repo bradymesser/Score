@@ -13,6 +13,9 @@
 		E3E882B92287167F00AD3DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E882B82287167F00AD3DC2 /* Assets.xcassets */; };
 		E3E882BC2287167F00AD3DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E882BA2287167F00AD3DC2 /* LaunchScreen.storyboard */; };
 		E3E882C4228726C200AD3DC2 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C3228726C200AD3DC2 /* SportViewController.swift */; };
+		E3E882C822873F1E00AD3DC2 /* SoccerVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */; };
+		E3E882CA228740F000AD3DC2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C9228740F000AD3DC2 /* VideoViewController.swift */; };
+		E3E882CD2287429900AD3DC2 /* FetchSoccerVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882CC2287429900AD3DC2 /* FetchSoccerVideos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E3E882BB2287167F00AD3DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3E882BD2287167F00AD3DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E882C3228726C200AD3DC2 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
+		E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerVideoModel.swift; sourceTree = "<group>"; };
+		E3E882C9228740F000AD3DC2 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		E3E882CC2287429900AD3DC2 /* FetchSoccerVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSoccerVideos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		E3E882B02287167D00AD3DC2 /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				E3E882CB2287428100AD3DC2 /* Services */,
+				E3E882C522873BF100AD3DC2 /* Models */,
 				E3E882B12287167D00AD3DC2 /* AppDelegate.swift */,
-				E3E882B32287167D00AD3DC2 /* ViewController.swift */,
-				E3E882B52287167D00AD3DC2 /* Main.storyboard */,
+				E3E882C622873BFA00AD3DC2 /* Views */,
 				E3E882B82287167F00AD3DC2 /* Assets.xcassets */,
 				E3E882BA2287167F00AD3DC2 /* LaunchScreen.storyboard */,
 				E3E882BD2287167F00AD3DC2 /* Info.plist */,
-				E3E882C3228726C200AD3DC2 /* SportViewController.swift */,
 			);
 			path = Score;
+			sourceTree = "<group>";
+		};
+		E3E882C522873BF100AD3DC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3E882C622873BFA00AD3DC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3E882B52287167D00AD3DC2 /* Main.storyboard */,
+				E3E882C3228726C200AD3DC2 /* SportViewController.swift */,
+				E3E882B32287167D00AD3DC2 /* ViewController.swift */,
+				E3E882C9228740F000AD3DC2 /* VideoViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3E882CB2287428100AD3DC2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E3E882CC2287429900AD3DC2 /* FetchSoccerVideos.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E882C822873F1E00AD3DC2 /* SoccerVideoModel.swift in Sources */,
+				E3E882CD2287429900AD3DC2 /* FetchSoccerVideos.swift in Sources */,
 				E3E882B42287167D00AD3DC2 /* ViewController.swift in Sources */,
 				E3E882B22287167D00AD3DC2 /* AppDelegate.swift in Sources */,
+				E3E882CA228740F000AD3DC2 /* VideoViewController.swift in Sources */,
 				E3E882C4228726C200AD3DC2 /* SportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
