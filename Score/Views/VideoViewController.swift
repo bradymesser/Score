@@ -8,17 +8,15 @@
 
 import Foundation
 import UIKit
+//var videos: [SoccerVideoModel] = []
 
 class VideoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
-    var videos: [SoccerVideoModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        videos = getSoccerVideos()
-        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,6 +27,7 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if let cell = cell as? CustomCell {
             cell.label.text = videos[indexPath.row].title
+            
         }
         return cell
     }

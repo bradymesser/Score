@@ -5,10 +5,9 @@
 //  Created by Brady on 5/11/19.
 //  Copyright © 2019 William Messer. All rights reserved.
 //
-
 import Foundation
 
-struct SoccerVideoModel: Decodable {
+struct SoccerVideoModel: Codable {
     let title: String
     let embed: String
     let url: String
@@ -19,18 +18,18 @@ struct SoccerVideoModel: Decodable {
     let videos: [Video]
 }
 
-struct Side: Decodable {
+struct Side: Codable {
     let name: String
     let url: String
 }
 
-struct Competition: Decodable {
+struct Competition: Codable {
     let name: String
     let id: Int
     let url: String
 }
 
-struct Video: Decodable {
+struct Video: Codable {
     let title: String
     let embed: String
 }

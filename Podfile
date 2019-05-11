@@ -1,3 +1,3 @@
 target "Score" do 
- pod "PromiseKit", "~> 6.8"
+    pod "PromiseKit", "~> 6.8"
 end
