@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import WebKit
 
 class GameViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var sides: UILabel!
@@ -30,8 +31,24 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = game?.videos[indexPath.row].title
-        print(game?.videos[indexPath.row].embed)
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let destination = storyboard.instantiateViewController(withIdentifier: "VideoViewer") as! VideoViewer
+        destination.html = game?.videos[indexPath.row].embed
+        navigationController?.pushViewController(destination, animated: true)
+    }
+    
+}
+
+class VideoViewer: UIViewController {
+    var html: String?
+    @IBOutlet weak var webView: WKWebView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        webView.loadHTMLString(html!, baseURL: nil)
+    }
 }
