@@ -1,11 +1,3 @@
-//
-//  SportViewController.swift
-//  Score
-//
-//  Created by Brady on 5/11/19.
-//  Copyright © 2019 William Messer. All rights reserved.
-//
-
 import Foundation
 import UIKit
 

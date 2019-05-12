@@ -102,7 +102,6 @@
 		E3E882B02287167D00AD3DC2 /* Score */ = {
 			isa = PBXGroup;
 			children = (
-				E3E882CE228749E800AD3DC2 /* Tests */,
 				E3E882CB2287428100AD3DC2 /* Services */,
 				E3E882C522873BF100AD3DC2 /* Models */,
 				E3E882B12287167D00AD3DC2 /* AppDelegate.swift */,
@@ -140,13 +139,6 @@
 				E3E882CC2287429900AD3DC2 /* FetchSoccerVideos.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		E3E882CE228749E800AD3DC2 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		E3E882DB22874BBA00AD3DC2 /* ScoreTests */ = {

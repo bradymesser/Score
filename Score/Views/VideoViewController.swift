@@ -33,6 +33,7 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
 }
 
+//Eventually should use the thumbnail to display the thumbnail for a game
 class CustomCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var thumbnail: UIImageView!
