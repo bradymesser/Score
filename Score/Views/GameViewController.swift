@@ -1,15 +1,8 @@
-//
-//  GameViewController.swift
-//  Score
-//
-//  Created by Brady on 5/11/19.
-//  Copyright © 2019 William Messer. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import WebKit
 
+//displays all videos for a game, as well as the competition and the two teams playing
 class GameViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var sides: UILabel!
     @IBOutlet weak var competition: UILabel!
@@ -44,6 +37,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 }
 
+//Displays a selected video
 class VideoViewer: UIViewController {
     var html: String?
     @IBOutlet weak var webView: WKWebView!

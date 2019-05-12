@@ -1,17 +1,10 @@
-//
-//  VideoViewController.swift
-//  Score
-//
-//  Created by Brady on 5/11/19.
-//  Copyright © 2019 William Messer. All rights reserved.
-//
-
 import Foundation
 import UIKit
-//var videos: [SoccerVideoModel] = []
 
+//Displays the list of games, tapping on a game takes you to a view that shows all the available videos for the game
 class VideoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
+    var videos: [SoccerVideoModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +19,6 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if let cell = cell as? CustomCell {
-            //cell.label.text = videos[indexPath.row].title
             cell.textLabel?.text = videos[indexPath.row].title
         }
         return cell

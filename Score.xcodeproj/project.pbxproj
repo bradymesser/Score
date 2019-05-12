@@ -10,7 +10,7 @@
 		E3AB8AE62287957500248899 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB8AE52287957500248899 /* GameViewController.swift */; };
 		E3AB8AE92287A56500248899 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AB8AE82287A56500248899 /* WebKit.framework */; };
 		E3E882B22287167D00AD3DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882B12287167D00AD3DC2 /* AppDelegate.swift */; };
-		E3E882B42287167D00AD3DC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882B32287167D00AD3DC2 /* ViewController.swift */; };
+		E3E882B42287167D00AD3DC2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882B32287167D00AD3DC2 /* RootViewController.swift */; };
 		E3E882B72287167D00AD3DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E882B52287167D00AD3DC2 /* Main.storyboard */; };
 		E3E882B92287167F00AD3DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E882B82287167F00AD3DC2 /* Assets.xcassets */; };
 		E3E882BC2287167F00AD3DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E882BA2287167F00AD3DC2 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		E3AB8AE82287A56500248899 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		E3E882AE2287167D00AD3DC2 /* Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Score.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E882B12287167D00AD3DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3E882B32287167D00AD3DC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3E882B32287167D00AD3DC2 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E3E882B62287167D00AD3DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3E882B82287167F00AD3DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3E882BB2287167F00AD3DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 			children = (
 				E3E882B52287167D00AD3DC2 /* Main.storyboard */,
 				E3E882C3228726C200AD3DC2 /* SportViewController.swift */,
-				E3E882B32287167D00AD3DC2 /* ViewController.swift */,
+				E3E882B32287167D00AD3DC2 /* RootViewController.swift */,
 				E3E882C9228740F000AD3DC2 /* VideoViewController.swift */,
 				E3AB8AE52287957500248899 /* GameViewController.swift */,
 			);
@@ -264,7 +264,7 @@
 				E3AB8AE62287957500248899 /* GameViewController.swift in Sources */,
 				E3E882C822873F1E00AD3DC2 /* SoccerVideoModel.swift in Sources */,
 				E3E882CD2287429900AD3DC2 /* FetchSoccerVideos.swift in Sources */,
-				E3E882B42287167D00AD3DC2 /* ViewController.swift in Sources */,
+				E3E882B42287167D00AD3DC2 /* RootViewController.swift in Sources */,
 				E3E882B22287167D00AD3DC2 /* AppDelegate.swift in Sources */,
 				E3E882CA228740F000AD3DC2 /* VideoViewController.swift in Sources */,
 				E3E882C4228726C200AD3DC2 /* SportViewController.swift in Sources */,

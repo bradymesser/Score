@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Score
-//
-//  Created by Brady on 5/11/19.
-//  Copyright © 2019 William Messer. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -14,10 +6,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.delegate = self
-        videos = getSoccerVideos()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,6 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.deselectRow(at: indexPath, animated: false)
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destination = storyboard.instantiateViewController(withIdentifier: "VideoView") as! VideoViewController
+        destination.videos = getSoccerVideos()
         navigationController?.pushViewController(destination, animated: true)
     }
 
