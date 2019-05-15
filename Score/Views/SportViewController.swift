@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 
+//This file is currently unused
 class SportViewController: UITableViewController {
     var sportLeague: [String] = ["League1","League2","League3"]
     var sport: String

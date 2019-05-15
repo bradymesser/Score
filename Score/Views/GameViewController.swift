@@ -44,6 +44,6 @@ class VideoViewer: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        webView.loadHTMLString(html!, baseURL: nil)
+        webView.loadHTMLString(html ?? "<h1>Error loading video.</h1>", baseURL: nil)
     }
 }
