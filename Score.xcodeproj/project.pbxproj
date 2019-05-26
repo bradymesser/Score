@@ -16,7 +16,7 @@
 		E3E882BC2287167F00AD3DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E882BA2287167F00AD3DC2 /* LaunchScreen.storyboard */; };
 		E3E882C4228726C200AD3DC2 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C3228726C200AD3DC2 /* SportViewController.swift */; };
 		E3E882C822873F1E00AD3DC2 /* SoccerVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */; };
-		E3E882CA228740F000AD3DC2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C9228740F000AD3DC2 /* VideoViewController.swift */; };
+		E3E882CA228740F000AD3DC2 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C9228740F000AD3DC2 /* GameListViewController.swift */; };
 		E3E882CD2287429900AD3DC2 /* FetchSoccerVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882CC2287429900AD3DC2 /* FetchSoccerVideos.swift */; };
 		E3E882E422874BD200AD3DC2 /* SoccerVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882CF22874A0200AD3DC2 /* SoccerVideoTests.swift */; };
 		E3E882E622874BF100AD3DC2 /* SoccerVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */; };
@@ -45,7 +45,7 @@
 		E3E882BD2287167F00AD3DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E882C3228726C200AD3DC2 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		E3E882C722873F1E00AD3DC2 /* SoccerVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerVideoModel.swift; sourceTree = "<group>"; };
-		E3E882C9228740F000AD3DC2 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		E3E882C9228740F000AD3DC2 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 		E3E882CC2287429900AD3DC2 /* FetchSoccerVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSoccerVideos.swift; sourceTree = "<group>"; };
 		E3E882CF22874A0200AD3DC2 /* SoccerVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerVideoTests.swift; sourceTree = "<group>"; };
 		E3E882D322874A9D00AD3DC2 /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				E3E882B52287167D00AD3DC2 /* Main.storyboard */,
 				E3E882C3228726C200AD3DC2 /* SportViewController.swift */,
 				E3E882B32287167D00AD3DC2 /* RootViewController.swift */,
-				E3E882C9228740F000AD3DC2 /* VideoViewController.swift */,
+				E3E882C9228740F000AD3DC2 /* GameListViewController.swift */,
 				E3AB8AE52287957500248899 /* GameViewController.swift */,
 			);
 			path = Views;
@@ -258,7 +258,7 @@
 				E3E882CD2287429900AD3DC2 /* FetchSoccerVideos.swift in Sources */,
 				E3E882B42287167D00AD3DC2 /* RootViewController.swift in Sources */,
 				E3E882B22287167D00AD3DC2 /* AppDelegate.swift in Sources */,
-				E3E882CA228740F000AD3DC2 /* VideoViewController.swift in Sources */,
+				E3E882CA228740F000AD3DC2 /* GameListViewController.swift in Sources */,
 				E3E882C4228726C200AD3DC2 /* SportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +342,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",

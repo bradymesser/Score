@@ -7,12 +7,14 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var sides: UILabel!
     @IBOutlet weak var competition: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var thumbnail: UIImageView!
     
     var game: SoccerVideoModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         sides.text = (game?.side1.name)! + " vs. " + (game?.side2.name)!
         competition.text = game?.competition.name
+        thumbnail.image = getSoccerVideoThumbnail(url: game?.thumbnail ?? "")
         tableView.dataSource = self
         tableView.delegate = self
     }

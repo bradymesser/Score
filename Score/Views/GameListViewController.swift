@@ -27,10 +27,13 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if let cell = cell as? CustomCell {
             if searchActive {
-                cell.textLabel?.text = filtered[indexPath.row].title
+//                cell.textLabel?.text = filtered[indexPath.row].title
+                cell.label.text = filtered[indexPath.row].title
+                cell.thumbnail.image = getSoccerVideoThumbnail(url: filtered[indexPath.row].thumbnail)
 
             } else {
-                cell.textLabel?.text = videos[indexPath.row].title
+                cell.label.text = videos[indexPath.row].title
+                cell.thumbnail.image = getSoccerVideoThumbnail(url: videos[indexPath.row].thumbnail)
             }
         }
         return cell
@@ -53,6 +56,11 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
 class CustomCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var thumbnail: UIImageView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        thumbnail.image = nil
+    }
 }
 
 extension VideoViewController: UISearchBarDelegate {

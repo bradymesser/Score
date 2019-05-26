@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 func getSoccerVideos() -> [SoccerVideoModel] {
     let decoder = JSONDecoder.init()
@@ -13,3 +14,15 @@ func getSoccerVideos() -> [SoccerVideoModel] {
     return videos ?? []
 }
 
+func getSoccerVideoThumbnail(url: String) -> UIImage? {
+    let url = URL(string: url)
+    guard let data = try? Data(contentsOf: url!) else {
+        print("Error retrieving data.")
+        return nil
+    }
+    guard let img = UIImage(data: data) else {
+        print("Error creating image.")
+        return nil
+    }
+    return img
+}
